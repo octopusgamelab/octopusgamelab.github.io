@@ -324,12 +324,12 @@
               <a href="https://assetstore.unity.com/packages/slug/414162" target="_blank" rel="noopener noreferrer">Unity Asset Store</a>.
               The package files are added under:
             </p>
-            <pre><code class="language-text">Assets/OctopusGameLab/GradientMapShader</code></pre>
+            <pre><code class="language-text">Assets/Octopus Game Lab/Gradient Map Shader</code></pre>
             <p>
               <a href="../RichGradient/">Rich Gradient</a> is included in the
               package. It is the gradient type the materials use, with up to 32
-              color keys. There are no extra setup steps: no Renderer Feature, no
-              project settings to change.
+              color keys. No Renderer Feature is needed. Some features need a URP
+              setting, see <a href="#project-settings">Project Settings</a>.
             </p>
             <h2 id="quickstart">1.3. Quickstart</h2>
             <ol>
@@ -975,8 +975,9 @@
               </figcaption>
             </figure>
             <p>
-              This is why Fill, Rim and Specular are not affected by Darken Map,
-              Lighten Map or shadows: they are added after the gradient.
+              This is why Fill, Rim and Specular are not affected by Darken Map or
+              Lighten Map, and Fill and Rim are not affected by shadows: they are
+              added after the gradient.
             </p>
             <h2 id="lighting">7.2. Lighting</h2>
             <p>

@@ -156,7 +156,7 @@
               or <code>ScriptableObject</code> exactly like a regular gradient
               field, and get a dedicated editor window, an OKLab-based
               <a href="#gradient-modes">Perceptual Blend mode</a> for smoother
-              transitions between saturated hues, and lossless two-way conversion
+              transitions between saturated hues, and two-way conversion
               to and from Unity's native <code>Gradient</code>.
             </p>
             <p>
@@ -170,7 +170,7 @@
               <a href="https://assetstore.unity.com/packages/slug/414152" target="_blank" rel="noopener noreferrer">Unity Asset Store</a>.
               The package files are added under:
             </p>
-            <pre><code class="language-text">Assets/OctopusGameLab/RichGradient</code></pre>
+            <pre><code class="language-text">Assets/Octopus Game Lab/Rich Gradient</code></pre>
             <p>
               Continue with <a href="#quickstart">Quickstart</a> to add your first
               gradient field.
@@ -350,7 +350,7 @@ public class GradientUser : MonoBehaviour
                 </tr>
                 <tr>
                   <td><code>OnChanged</code></td>
-                  <td>Raised after the keys or the mode change.</td>
+                  <td>Raised after the keys or the mode change from code. Inspector edits do not raise it.</td>
                 </tr>
                 <tr>
                   <td><code>MaxKeyCount</code></td>
@@ -397,7 +397,7 @@ Gradient backToUnity = fromUnity.ToGradient();</code></pre>
             <h2 id="code-examples">3.4. Code Examples</h2>
             <p>
               Reacting to <code>OnChanged</code> to refresh a texture whenever the
-              keys or mode change:
+              keys or mode change from code:
             </p>
             <pre><code class="language-csharp">private void OnEnable()
 {
