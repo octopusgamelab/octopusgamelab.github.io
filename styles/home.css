@@ -11,8 +11,8 @@
   background: linear-gradient(
     to bottom right,
     var(--color-gradient-0) 0%,
-    var(--color-gradient-45) 45%,
-    var(--color-gradient-70) 70%,
+    var(--color-gradient-50) 50%,
+    var(--color-gradient-77) 77%,
     var(--color-gradient-100) 100%
   );
 }
@@ -28,7 +28,7 @@
 }
 
 .home-logo {
-  height: clamp(128px, 16vh, 176px);
+  height: clamp(148px, 18vh, 200px);
   aspect-ratio: 780 / 192;
   margin-top: -32px;
   flex-shrink: 0;
@@ -118,11 +118,7 @@
 .home-theme-toggle-icon {
   font-size: 16px;
   line-height: 1;
-  background-image: linear-gradient(
-    to right,
-    var(--color-brand),
-    var(--color-brand-2)
-  );
+  background-image: var(--gradient-brand);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -145,11 +141,7 @@
 
   .page-home .button-medium:hover .button-label,
   .page-home .button-large:hover .button-label {
-    background-image: linear-gradient(
-      to right,
-      var(--color-brand),
-      var(--color-brand-2)
-    );
+    background-image: var(--gradient-brand);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -158,11 +150,7 @@
 
   .page-home .button-medium:hover .button-medium-icon,
   .page-home .button-large:hover .button-large-icon {
-    background-image: linear-gradient(
-      to right,
-      var(--color-brand),
-      var(--color-brand-2)
-    );
+    background-image: var(--gradient-brand);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -205,7 +193,7 @@
 
 @media (max-width: 960px) {
   .home-logo {
-    height: 88px;
+    height: 100px;
   }
 
   .home-products {

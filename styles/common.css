@@ -14,12 +14,19 @@
   --color-surface-border-dark: #404050;
 
   /* Static */
-  --color-brand: #fa514b;
-  --color-brand-2: #eb3691;
-  --color-gradient-0: #ffa500;
-  --color-gradient-45: #fa514b;
-  --color-gradient-70: #eb3691;
-  --color-gradient-100: #c51cc8;
+  --color-brand: #fa418c;
+  --color-brand-2: #cb21d0;
+  --color-gradient-0: #ffa039;
+  --color-gradient-50: #fa418c;
+  --color-gradient-77: #cb21d0;
+  --color-gradient-100: #9009fe;
+  --gradient-brand: linear-gradient(
+    to right,
+    var(--color-gradient-0) 0%,
+    var(--color-gradient-50) 50%,
+    var(--color-gradient-77) 77%,
+    var(--color-gradient-100) 100%
+  );
   --color-on-gradient: #ffffff;
   --color-transparent: #ffffff00;
   --color-lightbox-background: rgba(32, 32, 42, 0.92);
@@ -123,7 +130,7 @@ blockquote a {
   letter-spacing: -0.25px;
   padding: 0 2px;
   background-image:
-    linear-gradient(to right, var(--color-brand), var(--color-brand-2)),
+    var(--gradient-brand),
     linear-gradient(var(--color-text), var(--color-text));
   background-position: left bottom, left bottom;
   background-repeat: no-repeat, no-repeat;
