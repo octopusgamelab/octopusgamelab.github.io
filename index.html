@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./scripts/theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght@8..144,-10..0,75..150,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Octopus Lab | Home</title>
+  </head>
+  <body class="page-home">
+    <div class="home-content">
+      <div class="home-logo"></div>
+      <section class="home-section" aria-labelledby="home-contact-title">
+        <h2 id="home-contact-title" class="home-section-title">Get in touch</h2>
+        <p class="home-section-desc">
+          Got a question about one of our tools?<br>
+          Questions, feedback, or support.</p>
+        <a class="button-medium" href="mailto:octopuslabunity@gmail.com">
+          <span class="button-label">
+            <i class="fa-solid fa-envelope button-medium-icon" aria-hidden="true"></i>
+            octopuslabunity@gmail.com
+          </span>
+        </a>
+      </section>
+      <hr class="home-divider" />
+      <div class="home-products">
+        <section class="home-section" aria-labelledby="home-rich-gradient-title">
+          <h2 id="home-rich-gradient-title" class="home-section-title">
+            <i class="fa-brands fa-unity home-section-title-icon" aria-hidden="true"></i><span>Rich Gradient</span>
+          </h2>
+          <p class="home-section-desc">
+            A serializable gradient with up to 32 color and alpha keys — four times Unity's built-in limit.
+          </p>
+          <a class="button-medium" href="./RichGradient/">
+            <span class="button-label">Documentation</span>
+          </a>
+        </section>
+        <section class="home-section" aria-labelledby="home-gradient-map-title" hidden>
+          <h2 id="home-gradient-map-title" class="home-section-title">
+            <i class="fa-brands fa-unity home-section-title-icon" aria-hidden="true"></i><span>Gradient Map Shader</span>
+          </h2>
+          <p class="home-section-desc">
+            A custom Unity shader that uses Rich Gradient to remap colors through a gradient ramp.
+          </p>
+          <a class="button-medium" href="./GradientMapShader/">
+            <span class="button-label">Documentation</span>
+          </a>
+        </section>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="home-theme-toggle"
+      aria-pressed="false"
+      aria-label="Switch to dark mode"
+    >
+      <i
+        class="fa-solid fa-moon home-theme-toggle-icon"
+        aria-hidden="true"
+      ></i>
+    </button>
+  </body>
+</html>
