@@ -17,7 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="icon" type="image/png" href="../images/favicon.png" />
-    <title>Octopus Lab | Gradient Map Shader</title>
+    <title>Octopus Game Lab | Gradient Map Shader</title>
     <style>
       .documentation-figure--small {
         max-width: 480px;
@@ -45,7 +45,7 @@
         >
           <span class="documentation-nav-menu-icon" aria-hidden="true"></span>
         </button>
-        <a class="documentation-nav-logo" href="../" aria-label="Octopus Lab Home"></a>
+        <a class="documentation-nav-logo" href="../" aria-label="Octopus Game Lab Home"></a>
       </div>
       <div class="documentation-nav-scroll" id="documentation-nav-scroll">
         <div class="documentation-nav-group is-open">
@@ -192,7 +192,7 @@
         <span class="documentation-theme-toggle-label">Dark mode</span>
       </button>
       <p class="documentation-copyright documentation-copyright--nav">
-        © 2026 Octopus Lab
+        © 2026 Octopus Game Lab
       </p>
     </nav>
     <div class="documentation-section">
@@ -324,7 +324,7 @@
               <a href="https://assetstore.unity.com/packages/slug/414162" target="_blank" rel="noopener noreferrer">Unity Asset Store</a>.
               The package files are added under:
             </p>
-            <pre><code class="language-text">Assets/OctopusLab/GradientMapShader</code></pre>
+            <pre><code class="language-text">Assets/OctopusGameLab/GradientMapShader</code></pre>
             <p>
               <a href="../RichGradient/">Rich Gradient</a> is included in the
               package. It is the gradient type the materials use, with up to 32
@@ -334,7 +334,7 @@
             <h2 id="quickstart">1.3. Quickstart</h2>
             <ol>
               <li>Create a material: <strong>Assets → Create → Material</strong>.</li>
-              <li>Set its shader to <strong>Octopus Lab → Gradient Map Shader → Basic</strong>.</li>
+              <li>Set its shader to <strong>Octopus Game Lab → Gradient Map Shader → Basic</strong>.</li>
               <li>In the <strong>Shading</strong> section, click the <strong>Gradient</strong> field and pick your colors.</li>
               <li>Drag the material onto an object in the scene.</li>
             </ol>
@@ -876,7 +876,7 @@
             </p>
             <h2 id="skybox-setup">5.1. Setup</h2>
             <ol>
-              <li>Create a material with the <strong>Octopus Lab → Gradient Map Shader → Skybox</strong> shader.</li>
+              <li>Create a material with the <strong>Octopus Game Lab → Gradient Map Shader → Skybox</strong> shader.</li>
               <li>Open <strong>Window → Rendering → Lighting → Environment</strong>.</li>
               <li>Assign the material to <strong>Skybox Material</strong>.</li>
             </ol>
@@ -1179,11 +1179,11 @@
             <h2 id="api">8.1. Set Gradient</h2>
             <p>
               Use <code>SetGradient</code> to change a material's gradient from
-              code. It is in the <code>OctopusLab.GradientMapShader</code>
+              code. It is in the <code>OctopusGameLab.GradientMapShader</code>
               namespace.
             </p>
-            <pre><code class="language-csharp">using OctopusLab.GradientMapShader;
-using OctopusLab.RichGradient;
+            <pre><code class="language-csharp">using OctopusGameLab.GradientMapShader;
+using OctopusGameLab.RichGradient;
 using UnityEngine;
 
 public class GradientChanger : MonoBehaviour
@@ -1213,8 +1213,8 @@ public class GradientChanger : MonoBehaviour
               </li>
               <li>
                 If your scripts have their own Assembly Definition, add
-                <code>OctopusLab.GradientMapShader</code> and
-                <code>OctopusLab.RichGradient</code> to its references.
+                <code>OctopusGameLab.GradientMapShader</code> and
+                <code>OctopusGameLab.RichGradient</code> to its references.
               </li>
             </ul>
             <h2 id="api-gradient-asset">8.2. Gradient Asset</h2>
@@ -1497,10 +1497,10 @@ material.SetFloat("_OutlineWidth", 0.1f);</code></pre>
             <p>
               Have a question, found a bug, or have feedback? Send us an email.
             </p>
-            <a class="button-medium" href="mailto:octopuslabunity@gmail.com">
+            <a class="button-medium" href="mailto:octopusgamelab@gmail.com">
               <span class="button-label">
                 <i class="fa-solid fa-envelope button-medium-icon" aria-hidden="true"></i>
-                octopuslabunity@gmail.com
+                octopusgamelab@gmail.com
               </span>
             </a>
             </div>
@@ -1509,7 +1509,7 @@ material.SetFloat("_OutlineWidth", 0.1f);</code></pre>
       </div>
     </div>
     <footer class="documentation-copyright documentation-copyright--page">
-      © 2026 Octopus Lab
+      © 2026 Octopus Game Lab
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
